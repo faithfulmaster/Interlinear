@@ -86,7 +86,7 @@ Finally you'll get as many output files as "ncpus"
 	Concatenate those files, and you have your word alignment
 
 ### Python 2.7
--- https://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/
+-- From https://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/
 
 Install python pre-requisites
 
