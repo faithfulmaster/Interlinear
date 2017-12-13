@@ -8,14 +8,15 @@ This repo contains the scripts for developing an Interlinear
 ### MGIZA Word Alignment Tool 
 -- From http://www.statmt.org/moses/?n=Moses.ExternalTools#ntoc3
 
-*  git clone https://github.com/moses-smt/mgiza.git
-*  cd mgiza/mgizapp
-*  sudo apt install cmake
-*  Install boost: (sudo apt-get install libboost-all-dev)
-*  cmake .
-*  make
-*  make install
-*  Now, check your installation using : 
+	git clone https://github.com/moses-smt/mgiza.git
+	cd mgiza/mgizapp
+	sudo apt install cmake
+* Install boost: 
+	sudo apt-get install libboost-all-dev
+	cmake .
+	make
+	make install
+* Now, check your installation using : 
 	cd bin 
 	./mgiza
 
@@ -60,42 +61,42 @@ Finally you'll get as many output files as "ncpus"
 -- https://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/
 
 * Install python pre-requisites
-$ sudo apt-get update
-$ sudo apt-get install build-essential checkinstall
-$ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
+	sudo apt-get update
+	sudo apt-get install build-essential checkinstall
+	sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 
 * Download and extract python package
-$ cd /usr/src
-$ sudo wget https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tgz
-$ sudo tar xzf Python-2.7.14.tgz
+	cd /usr/src
+	sudo wget https://www.python.org/ftp/python/2.7.14/Python-2.7.14.tgz
+	sudo tar xzf Python-2.7.14.tgz
 
 * Compile python package
-$ cd Python-2.7.14
-$ sudo ./configure
-$ sudo make altinstall
+	cd Python-2.7.14
+	sudo ./configure
+	sudo make altinstall
 
 * Check python version
-$ python2.7 -V
+	python2.7 -V
 
 ### MYSQL
 -- From https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
 
 * Installation
-$ sudo apt-get update
-$ sudo apt-get install mysql-server
+	sudo apt-get update
+	sudo apt-get install mysql-server
 
 * Configuration
-$ mysql_secure_installation
+	mysql_secure_installation
 
 * Testing
-$ systemctl status mysql.service
+	systemctl status mysql.service
 
 ### phpMyAdmin (optional)
 -- From https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-16-04
 
 * Installation
-$ sudo apt-get update
-$ sudo apt-get install phpmyadmin php-mbstring php-gettext
+	sudo apt-get update
+	sudo apt-get install phpmyadmin php-mbstring php-gettext
 
 This will ask you a few questions in order to configure your installation correctly.
 
@@ -107,10 +108,10 @@ Warning: When the first prompt appears, apache2 is highlighted, but not selected
     You will then be asked to choose and confirm a password for the phpMyAdmin application itself
 
 * Enable PHP scripts explicitly
-$ sudo phpenmod mcrypt
-$ sudo phpenmod mbstring
+	sudo phpenmod mcrypt
+	sudo phpenmod mbstring
 
 * Restart Apache server
-$ sudo systemctl restart apache2
+	sudo systemctl restart apache2
 
 * Access phpmyAdmin interface through web browser : https://domain_name_or_IP/phpmyadmin
