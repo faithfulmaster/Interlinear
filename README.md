@@ -101,20 +101,17 @@ Finally you'll get as many output files as "ncpus"
 	sudo apt-get install mysql-server
 
 * Configuration
-	
-	mysql_secure_installation
+	`mysql_secure_installation`
 
 * Testing
-	
-	systemctl status mysql.service
+	`systemctl status mysql.service`
 
 ### phpMyAdmin (optional)
 -- From https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-ubuntu-16-04
 
 * Installation
-	
-	sudo apt-get update
-	sudo apt-get install phpmyadmin php-mbstring php-gettext
+	`sudo apt-get update`	
+	`sudo apt-get install phpmyadmin php-mbstring php-gettext`
 
 This will ask you a few questions in order to configure your installation correctly.
 
@@ -126,12 +123,10 @@ Warning: When the first prompt appears, apache2 is highlighted, but not selected
     You will then be asked to choose and confirm a password for the phpMyAdmin application itself
 
 * Enable PHP scripts explicitly
-	
     `sudo phpenmod mcrypt`    
     `sudo phpenmod mbstring`
 
 * Restart Apache server
-	
-	sudo systemctl restart apache2
+	`sudo systemctl restart apache2`
 
 * Access phpmyAdmin interface through web browser : https://domain_name_or_IP/phpmyadmin
