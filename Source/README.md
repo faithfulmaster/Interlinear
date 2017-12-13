@@ -18,4 +18,4 @@ Scripts available here:
 	Throws an exception if they do not match. You also might need to update the scripts with some regex for better cleanup, if necessary. 
 	This script helps in cleaning up the two text files, which can then be served as input to the Mgiza Word Aligner Tool.
 
-Please Note: Before running the script, open the script, and update the source/target folder names as per your requirement. 
+Please Note: Before running the script, open it and update the source/target folder names as per your requirement. 
