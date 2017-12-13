@@ -11,13 +11,15 @@ This repo contains the scripts for developing an Interlinear
 	git clone https://github.com/moses-smt/mgiza.git
 	cd mgiza/mgizapp
 	sudo apt install cmake
-* Install boost: 
+
+Install boost: 
 	
 	sudo apt-get install libboost-all-dev
 	cmake .
 	make
 	make install
-* Now, check your installation using : 
+
+Now, check your installation using : 
 	
 	cd bin 
 	./mgiza
@@ -70,7 +72,7 @@ Finally you'll get as many output files as "ncpus"
 -- https://tecadmin.net/install-python-2-7-on-ubuntu-and-linuxmint/
 
 * Install python pre-requisites
-	`sudo apt-get Update`	
+	`sudo apt-get update`	
 	`sudo apt-get install build-essential checkinstall`	
 	`sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev`	
 
