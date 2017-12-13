@@ -83,22 +83,19 @@ Finally you'll get as many output files as "ncpus"
 	sudo tar xzf Python-2.7.14.tgz
 
 * Compile python package
-	
-	cd Python-2.7.14
-	sudo ./configure
-	sudo make altinstall
+	`cd Python-2.7.14`	
+	`sudo ./configure`	
+	`sudo make altinstall`
 
 * Check python version
-	
-	python2.7 -V
+	`python2.7 -V`
 
 ### MYSQL
 -- From https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-16-04
 
 * Installation
-	
-	sudo apt-get update
-	sudo apt-get install mysql-server
+	`sudo apt-get update`	
+	`sudo apt-get install mysql-server`
 
 * Configuration
 	`mysql_secure_installation`
