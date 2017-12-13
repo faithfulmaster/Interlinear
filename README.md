@@ -128,7 +128,7 @@ Warning: When the first prompt appears, apache2 is highlighted, but not selected
 * Enable PHP scripts explicitly
 	
     sudo phpenmod mcrypt
-    <sudo phpenmod mbstring>
+    `<sudo phpenmod mbstring>`
 
 * Restart Apache server
 	
