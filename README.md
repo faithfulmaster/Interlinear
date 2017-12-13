@@ -26,10 +26,11 @@ Now, check your installation using :
 
 -- Now, referring to, https://fabioticconi.wordpress.com/2011/01/17/how-to-do-a-word-alignment-with-giza-or-mgiza-from-parallel-corpus/
 
-* Download tools and extract it: http://www.statmt.org/europarl/v7/tools.tgz
-* Download any parallel corpus for a language pair, and extract it from: http://www.statmt.org/europarl/
-* Now tokenize,
-	
+Download tools and extract it: 
+	http://www.statmt.org/europarl/v7/tools.tgz
+Download any parallel corpus for a language pair, and extract it from: 
+	http://www.statmt.org/europarl/
+Now tokenize,
 	tokenizer.perl -l src < raw_corp.src > corp.tok.src
 	tokenizer.perl -l trg < raw_corp.trg > corp.tok.trg
 
