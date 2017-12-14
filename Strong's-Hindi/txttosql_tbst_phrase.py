@@ -20,15 +20,24 @@ linenum = 1
 for line in inline:
 	pos = 1
 	onlyline = re.search("\d+\s(.*)", line)
-	words = onlyline.group(1).strip().split(">")
-	for i in words:
-		if i != "":
-			strongsnum = re.search(r"<(.*)", i)
-			if strongsnum != None:
-				sqlfile.write(",(" + str(linenum) + "," + str(pos) + ",'" + i + ">','" + strongsnum.group(1) + "','')" )
-			else:
-				sqlfile.write(",(" + str(linenum) + "," + str(pos) + ",'" + i + "','','')" )
+	actualline = onlyline.group(1).strip().split(" NULL ")
+	for j in range(0, len(actualline)):
+		if j == 0:
+			words = actualline[j].strip().split(">")
+			for i in words:
+				if i != "":
+					strongsnum = re.search(r"<(.*)", i)
+					if strongsnum != None:
+						sqlfile.write(",(" + str(linenum) + "," + str(pos) + ",'" + i.strip() + ">','" + strongsnum.group(1) + "','')" )
+					else:
+						sqlfile.write(",(" + str(linenum) + "," + str(pos) + ",'" + i.strip() + "','','')" )
+					pos += 1
+		else:
+			strongsnum = re.search(r"<(.*)>", actualline[j])
+			sqlfile.write(",(" + str(linenum) + "," + str(pos) + ",''," + strongsnum.group(1) + ",'')" )
 			pos += 1
+
+		
 	linenum += 1
 
 sqlfile.write(";")
