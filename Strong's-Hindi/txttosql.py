@@ -41,7 +41,7 @@ for name in files:
 			if word != "":
 				n += 1
 				print word
-				outline += "(" + findv.group(1).strip() + "," + str(n) + ",'" + word + "'),"
+				outline += "(" + str(23145 + int(findv.group(1).strip())) + "," + str(n) + ",'" + word + "'),"
 	outfile.write(outline)
 	outfile.close()
 	print "Done !"
