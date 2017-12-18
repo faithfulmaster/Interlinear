@@ -12,6 +12,16 @@ This repo contains the scripts for developing an Interlinear
 	cd mgiza/mgizapp
 	sudo apt install cmake
 
+Install gcc:
+	
+	add-apt-repository ppa:eugenesan/ppa
+	apt-get update
+	apt-get install gcc-4.9 -y
+
+Install g++:
+	
+	apt-get install g++
+
 Install boost: 
 	
 	sudo apt-get install libboost-all-dev
@@ -47,12 +57,6 @@ Now, lowercase every word,
 	
 	tr '[:upper:]' '[:lower:]' < corp.tok.src > corp.tok.low.src
 	tr '[:upper:]' '[:lower:]' < corp.tok.trg > corp.tok.low.trg
-
-Install gcc:
-	
-	add-apt-repository ppa:eugenesan/ppa
-	apt-get update
-	apt-get install gcc-4.9 -y
 
 Make classes (Note: Please avoid any space after -p and -V),
 	
