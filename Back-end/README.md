@@ -1,7 +1,7 @@
 # Interlinear Back-end
 
 This repo contains the files and scripts for implementing the Interlinear Project
-Once pre-requisites are completed, you can find the instructions for implementing the back-end [here](https://github.com/faithfulmaster/Interlinear/blob/master/Strong's-Hindi/README.md).
+Once pre-requisites are completed, you can find the instructions for implementing the back-end [here](../Strong's-Hindi/README.md).
 
 ## Prerequisites
 
