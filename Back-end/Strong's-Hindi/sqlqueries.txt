@@ -1,0 +1,4 @@
+mysql -u root --max_allowed_packet=1073741824 --default-character-set=utf8 interlinear < C:\Users\Autographa\Desktop\hi_bib_id_tbst_phrase.sql
+
+DROP TABLE IF EXISTS giza_linkage_grk2ayt;
+CREATE TABLE IF NOT EXISTS giza_linkage_grk2ayt (ayat smallint(5) UNSIGNED DEFAULT NULL, net tinyint(3) UNSIGNED DEFAULT NULL, kata char(30) COLLATE utf8_unicode_ci DEFAULT NULL, wh tinyint(3) UNSIGNED DEFAULT NULL, strong smallint(5) UNSIGNED DEFAULT NULL, tipe tinyint(3) UNSIGNED NOT NULL DEFAULT '0', stage tinyint(3) UNSIGNED NOT NULL DEFAULT '0', KEY ayat (ayat), KEY net (net), KEY wh (wh), KEY strong (strong), KEY stage (stage) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

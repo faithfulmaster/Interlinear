@@ -1,0 +1,124 @@
+body{
+	font-family:"Georgia",sans serif;
+	font-size:15px;
+}
+
+#myCanvas{position:absolute;}
+.s{
+	width:55px;
+	display:block;
+	float:left;
+	text-align:right;
+	padding-right:5px;
+
+}
+.h {font-family: olbheb;font-size:16px;float:right;}
+*html .h{float:left;}
+.g {
+	/*font-family: olbgrk;*/
+	font-family:greek;
+	font-size:16px;
+	float:left;
+}
+*html .g{float:none;}
+.t1 {font-weight: bold}
+.t2 {color: #00F}
+.t3 {color: #0C0}
+.t4 {color: #F00}
+.t253 {color: #8C8}
+.t255 {color: #888}
+.del {background-color: #F88}
+.dem {background-color: #FC8}
+.checked {
+    font-family: "Arial Unicode MS", "Lucida Sans Unicode";
+    color: #0C0;
+}
+.empty {
+    font-family: "Arial Unicode MS", "Lucida Sans Unicode";
+    font-weight: bold;
+}
+.update {
+    font-size: small;
+    font-weight: bold;
+    color: #F00;
+}
+.left {color: #F00}
+.dd {position: absolute; 
+    width: auto !important;
+    }
+
+.av {
+    border: 3px solid #88F;
+    background-color:#e0fce0;
+}
+.button {font-weight: bold}
+
+.down {
+    background: #bbb;
+    border-top: solid 2px #777;
+    border-left: solid 3px #777;
+    border-bottom:solid 2px  #eaeaea;
+    border-right: solid 3px #eaeaea;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    }
+
+#info{
+	margin-left:15px;
+	margin-bottom:-3px;
+}    
+#sbook{
+	margin-left:15px;
+}
+.toogle{
+	margin-left:20px;
+}
+.lexlinkheader{
+	color:yellow;
+}
+.lexlinkcontent{
+	color:#000077;
+	font-weight:bold;
+}
+.redbutton {
+    font-weight: bold;
+    color: #FFF;
+    background-color: #F00;
+}
+.d1 {
+    font-weight: bold;
+    border: 1px solid black;
+}
+.d2 {
+    color: #00F;
+    border: 1px solid black;
+}
+.d3 {
+    color: #0C0;
+    border: 1px solid black;
+}
+.d4 {
+    color: #F00;
+    border: 1px solid black;
+}
+.d253 {
+    color: #8C8;
+    border: 1px solid black;
+}
+.d255 {
+    color: #888;
+    border: 1px solid black;
+}
+.on {
+    color: #FFF;
+    background-color: #000;
+    font-weight: bold;
+}
+.semi {
+    background-color: #CCC;
+    border: 1px solid grey;
+}
+.off {color: #888}
+.ref {background-color: #FF8}
+.warning{color:red;margin-top:10px;}

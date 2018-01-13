@@ -1,0 +1,1 @@
+CREATE DATABASE interlinear character set utf8 collate utf8_unicode_ci;

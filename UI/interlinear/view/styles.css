@@ -1,0 +1,36 @@
+.unit {
+    float: left;
+    text-align: center;
+    height: 5em;
+    margin: .25em 1px;
+    padding: .25em;
+}
+
+.unithebrew {
+    float: right;
+    text-align: center;
+    height: 5em;
+    margin: .25em 1px;
+    padding: .25em;
+}
+
+.bad {background-color: #FCC}
+.fuzzy {background-color: #EEE}
+
+.h {font-family: olbheb}
+.g {font-family: olbgrk}
+
+.t1 {font-weight: bold}
+.t2 {color: #00F}
+.t3 {color: #0C0}
+.t4 {color: #F00}
+.t253 {color: #8C8}
+.t255 {color: #888}
+
+.lexlinkheader{
+	color:yellow;
+}
+.lexlinkcontent{
+	color:#000077;
+	font-weight:bold;
+}
