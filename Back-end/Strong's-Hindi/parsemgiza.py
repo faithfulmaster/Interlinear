@@ -126,7 +126,7 @@ sqlfile = open("hi_bib_id_tbst_texts.sql", "w")
 sqlfile.write("DROP TABLE IF EXISTS bib_id_tbst_texts;\n\n")
 sqlfile.write("CREATE TABLE bib_id_tbst_texts (id smallint(5) unsigned NOT NULL DEFAULT '0', text text COLLATE utf8_unicode_ci, PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;\n\n")
 sqlfile.write("INSERT INTO bib_id_tbst_texts (id, text) VALUES ",)
-outline = ""
+outline1 = ""
 for line in inline:
 	words = line.split(" ")
 	outline = ""
@@ -153,10 +153,10 @@ for line in inline:
 
 	sqlsearch = re.search(r"(\d+)\s(.*)", removespace10)
 	if sqlsearch != None:
-		outline += "(" + sqlsearch.group(1) + "," + "'" + sqlsearch.group(2) + "'),")
+		outline1 += "(" + sqlsearch.group(1) + "," + "'" + sqlsearch.group(2) + "'),"
 	else:
 		print removespace10
-sqlfile.write(outline[:-1] + ";")
+sqlfile.write(outline1[:-1] + ";")
 outfile.close()
 infile.close()
 print "Cleanup completed and sql file generated !"
