@@ -6,7 +6,7 @@ import errno
 import os
 
 # Concatenation of mgiza files 
-files = glob.glob('st-hi/st_hi.dict.A3.final*')
+files = glob.glob('MGiza files/st_hi.dict.A3.final*')
 fileindex = []
 totallen = 0
 m = 0
